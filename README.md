@@ -1,6 +1,6 @@
 # Cats vs Dogs Classification 🐱🐶
 
-## 📌 Project Overview
+## Project Overview
 
 This project builds a **Deep Learning CNN (Convolutional Neural Network)** model to classify images as either **cats** or **dogs**. The model learns visual features from thousands of images and can accurately predict the animal type from new, unseen images.
 
@@ -8,18 +8,18 @@ This project builds a **Deep Learning CNN (Convolutional Neural Network)** model
 
 ---
 
-## 🎯 Objective
+## Objective
 
 Build a predictive model that:
-- ✅ Correctly classifies images as cat or dog with high accuracy
-- ✅ Learns visual patterns (edges, textures, shapes, features)
-- ✅ Generalizes well to unseen images
-- ✅ Handles overfitting through regularization techniques
-- ✅ Provides confidence scores for predictions
+- Correctly classifies images as cat or dog with high accuracy
+- Learns visual patterns (edges, textures, shapes, features)
+- Generalizes well to unseen images
+- Handles overfitting through regularization techniques
+- Provides confidence scores for predictions
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 **Source:** [Kaggle - Cat vs Dog Dataset](https://www.kaggle.com/datasets/karakaggle/kaggle-cat-vs-dog-dataset)
 
@@ -46,7 +46,7 @@ PetImages/
 
 ---
 
-## 🔄 Project Workflow
+## Project Workflow
 
 ```
 1. DATA LOADING
@@ -124,7 +124,7 @@ PetImages/
 
 ---
 
-## 🛠️ Technologies & Libraries
+## Technologies & Libraries
 
 ### **Core Libraries:**
 - **Python 3.x** - Programming language
@@ -155,7 +155,7 @@ PetImages/
 
 ---
 
-## 🤖 CNN Model Architecture
+## CNN Model Architecture
 
 ### **Architecture Overview:**
 ```
@@ -248,7 +248,7 @@ Dropout(0.1)
 
 ---
 
-## 📈 Data Preprocessing
+## Data Preprocessing
 
 ### **1. Image Loading and Directory Organization**
 ```python
@@ -302,7 +302,7 @@ Total Data
 
 ---
 
-## 🎓 Training Process
+## Training Process
 
 ### **Training Configuration:**
 ```python
@@ -343,19 +343,19 @@ history = model.fit(
 
 ### **What to Monitor:**
 ```
-✅ Good Training:
+Good Training:
 ├─ Training loss: Decreases
 ├─ Validation loss: Decreases or plateaus
 ├─ Training accuracy: Increases toward 100%
 └─ Gap between train & val: Small
 
-⚠️ Overfitting (Why BatchNorm + Dropout help):
+Overfitting (Why BatchNorm + Dropout help):
 ├─ Training loss: Decreases
 ├─ Validation loss: Increases ← BAD
 ├─ Training accuracy: High
 └─ Validation accuracy: Lower ← Overfitting
 
-💡 Regularization Techniques Used:
+Regularization Techniques Used:
 ├─ BatchNormalization: Normalizes layer inputs
 ├─ Dropout: Random neuron deactivation
 └─ Sufficient data: More images = better generalization
@@ -363,7 +363,7 @@ history = model.fit(
 
 ---
 
-## 📊 Model Performance
+## Model Performance
 
 ### **Expected Performance:**
 ```
@@ -393,8 +393,8 @@ Accuracy (%)
    └─────────────────
      0   5   10 Epochs
 
-✅ Good: Both curves increase and converge
-⚠️ Warning: Large gap = Overfitting
+Good: Both curves increase and converge
+Warning: Large gap = Overfitting
 ```
 
 **Loss Graph:**
@@ -410,13 +410,13 @@ Loss
  0│_____╲___________
    0   5   10 Epochs
 
-✅ Good: Both curves decrease
-⚠️ Warning: Val loss increasing = Overfitting
+Good: Both curves decrease
+Warning: Val loss increasing = Overfitting
 ```
 
 ---
 
-## 🔍 How to Use the Model
+## How to Use the Model
 
 ### **Making Predictions on New Images:**
 
@@ -462,7 +462,7 @@ Final Prediction
 
 ---
 
-## 💡 Overfitting & Regularization
+## Overfitting & Regularization
 
 ### **What is Overfitting?**
 ```
@@ -511,7 +511,7 @@ ReduceLROnPlateau(monitor='val_loss', factor=0.5)
 
 ---
 
-## 📁 Project Files
+## Project Files
 
 ```
 Cats_v_Dogs_Classification.ipynb
@@ -543,7 +543,7 @@ Cats_v_Dogs_Classification.ipynb
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### **Requirements:**
 ```
@@ -558,15 +558,15 @@ pip install tensorflow keras numpy matplotlib opencv-python kagglehub
 
 ### **For Google Colab (Recommended):**
 ```
-✅ All libraries pre-installed
-✅ Free GPU access
-✅ Easy Kaggle integration
-✅ No installation needed
+- All libraries pre-installed
+- Free GPU access
+- Easy Kaggle integration
+- No installation needed
 ```
 
 ---
 
-## 🏃 How to Run
+## How to Run
 
 ### **Step 1: Set Up Environment**
 ```python
@@ -608,7 +608,7 @@ path = kagglehub.dataset_download("karakaggle/kaggle-cat-vs-dog-dataset")
 
 ---
 
-## 📊 Expected Results
+## Expected Results
 
 ### **Model Performance:**
 ```
@@ -627,19 +627,19 @@ Sample Predictions:
 ### **What to Look For in Graphs:**
 ```
 Accuracy:
-✅ Both training & validation increase
-✅ Convergence around epoch 8-10
-✅ Small gap between train & validation
+- Both training & validation increase
+- Convergence around epoch 8-10
+- Small gap between train & validation
 
 Loss:
-✅ Both decrease over epochs
-✅ Stabilize in later epochs
-✅ Validation close to training
+- Both decrease over epochs
+- Stabilize in later epochs
+- Validation close to training
 ```
 
 ---
 
-## 🔧 Customization & Improvements
+## Customization & Improvements
 
 ### **Model Enhancements:**
 
@@ -688,7 +688,7 @@ Loss:
 
 ---
 
-## 📚 Learning Resources
+## Learning Resources
 
 - **TensorFlow/Keras:** https://www.tensorflow.org/guide
 - **CNN Basics:** https://cs231n.github.io/
@@ -698,7 +698,7 @@ Loss:
 
 ---
 
-## 🎓 Key Concepts Explained
+## Key Concepts Explained
 
 ### **Convolution Operation:**
 ```
@@ -744,7 +744,7 @@ Benefits:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Feel free to:
 - Improve model architecture
@@ -755,21 +755,13 @@ Feel free to:
 
 ---
 
-## 📄 License
+## License
 
 This project uses the Kaggle public dataset. Refer to Kaggle's terms for dataset usage.
 
 ---
 
-## 👨‍💻 Author
-
-Created as part of the 100 Days ML Challenge.
-
-**Original Notebook:** [RajeevRanjany/100DaysML](https://github.com/RajeevRanjany/100DaysML)
-
----
-
-## 📞 Support
+## Support
 
 For questions about:
 - **CNN Architecture:** Refer to TensorFlow documentation
@@ -779,19 +771,19 @@ For questions about:
 
 ---
 
-## 🎯 Summary
+## Summary
 
-This project demonstrates:
-✅ Building CNN from scratch  
-✅ Image preprocessing and normalization  
-✅ Convolutional feature extraction  
-✅ Handling overfitting with batch norm & dropout  
-✅ Binary image classification  
-✅ Performance visualization  
-✅ Making predictions on new images  
+- This project demonstrates:
+- Building CNN from scratch  
+- Image preprocessing and normalization  
+- Convolutional feature extraction  
+- Handling overfitting with batch norm & dropout  
+- Binary image classification  
+- Performance visualization  
+- Making predictions on new images  
 
 ---
 
 **Last Updated:** April 3, 2026
 
-**Status:** ✅ Complete and Ready to Use
+**Status:** Complete and Ready to Use
