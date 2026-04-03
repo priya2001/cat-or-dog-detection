@@ -783,7 +783,4 @@ For questions about:
 - Making predictions on new images  
 
 ---
-
-**Last Updated:** April 3, 2026
-
 **Status:** Complete and Ready to Use
